@@ -1,0 +1,3 @@
+@{
+WebSecurity.InitializeDatabaseConnection("Users", "UserProfile", "UserId", "Email", true);
+}
