@@ -21,16 +21,16 @@
 	<div class=msg>
 		This page uses Bootstrap.
 	</div>
-	<br><br>
+	<br>
 	<div class="well loginbox">
 		<h2>Please Sign In</h2>
 		<br><br>
 		<h4>Enter Your Username and Password Below.</h4>
 		<br>
-		<form class="form-signin">
-		<input type="text" class="form-control" placeholder="User ID" required autofocus>
+		<form class="form-signin" id="loginForm">
+		<input id="loginUserId" type="text" class="form-control" placeholder="User ID" required autofocus>
 		<br>
-		<input type="password" class="form-control" placeholder="Password" required>
+		<input id="loginPassword" type="password" class="form-control" placeholder="Password" required>
 		<br>
 		<button type="submit" class="btn btn-primary" id="loginSendForm">Sign In</button>
 		</form>
