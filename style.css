@@ -26,6 +26,13 @@ div.error {
   padding: 25px;
   color: orange;
 }
+div.msg {
+  background-color: blue;
+  %width: 500px;
+  %height: 100px;
+  padding: 25px;
+  color: green;
+}
 
 center {
     text-align:center;
