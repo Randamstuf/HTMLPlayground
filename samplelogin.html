@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<script>
+		element.addEventListener("loginSendForm", error);
+		function error() {
+		 document.getElementById("loginError").innerHTML = "Login Not Accepted. Try Again Later.";\
+		 document.getElementById("loginError").className = "btn btn-danger";
+		}
+		
+		
+	</script>
 	<title>GitHub Test Site</title>
 <link rel="stylesheet" type="text/css" href="style.css">
 <!-- Latest compiled and minified CSS -->
@@ -34,6 +43,8 @@
 		<button type="submit" class="btn btn-primary" id="loginSendForm">Sign In</button>
 		</form>
 	</div>
-	<p class="text-danger" id="loginError"
+	<p class="text-danger" id="loginError">
+		
+	</p>
 	</body>
 	</html>
