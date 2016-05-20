@@ -2,8 +2,8 @@
 <html>
 <head>
 	<script>
-		element.addEventListener("loginSendForm", error);
-		function error() {
+		element.addEventListener("loginSendForm", lgerror);
+		function lgerror() {
 		 document.getElementById("loginError").innerHTML = "Login Not Accepted. Try Again Later.";\
 		 document.getElementById("loginError").className = "btn btn-danger";
 		}
@@ -40,7 +40,7 @@
 		<br>
 		<input id="loginPassword" type="password" class="form-control" placeholder="Password" required>
 		<br>
-		<button type="submit" class="btn btn-primary" id="loginSendForm">Sign In</button>
+		<button onClick="lgerror()" type="submit" class="btn btn-primary" id="loginSendForm">Sign In</button>
 		</form>
 	</div>
 	<p class="text-danger" id="loginError">
