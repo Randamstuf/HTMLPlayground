@@ -12,7 +12,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $input = test_input($_POST["input"]);
   $auth = test_input($_POST["auth"]);
 } else {
-die "408";
+echo "408";
+die();
 }
 
 function test_input($data) {
