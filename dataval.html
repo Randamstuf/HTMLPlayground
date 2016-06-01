@@ -5,6 +5,8 @@ $input = $auth = "";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $input = test_input($_POST["input"]);
   $auth = test_input($_POST["auth"]);
+} else {
+die "408";
 }
 
 function test_input($data) {
@@ -17,5 +19,5 @@ function test_input($data) {
 if ($auth == "000") {
 
 } else {
-  echo "401"
+  echo "401";
 ?>
